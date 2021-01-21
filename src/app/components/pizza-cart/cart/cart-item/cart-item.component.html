@@ -1,0 +1,13 @@
+<div class="cart-item" ><strong>Cart</strong>
+ <ul>Pizza ordered:
+     <li *ngFor= "let items of cartItem">
+        <span>{{items.pizzaName}}</span>:   
+    <span>{{items.qty}}</span> x
+    <span>{{items.price}}</span>:
+    <strong>{{(items.qty*items.price)|currency:'INR'}}</strong>
+</li>
+</ul>
+</div>
+
+
+    

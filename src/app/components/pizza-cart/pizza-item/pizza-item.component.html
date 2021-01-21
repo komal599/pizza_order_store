@@ -1,0 +1,26 @@
+<div class="card-mb-4 shadow-sm">
+    <img class="bd-placeholder-img card-img-top p-2" width="100%" src="https://images.dominos.co.in/new_veggie_paradise.jpg">
+
+    <div class="card-body">
+        <p class="card-text">
+         
+                <strong>{{pizzaItem.price|currency: 'INR'}}</strong>
+            
+        </p>
+      <p class="card-text"> {{pizzaItem.description}}</p>
+      <div class="d-flex justify-content-between align-items-center">
+          
+        <div class="btn-group">
+          <button
+           type="button" class="btn btn-sm btn-primary pizza-btn" 
+           (click)="handleAddToCart()">Add to cart</button>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
